@@ -3,11 +3,24 @@
         <h1 class="text-5xl font-bold leading-tight tracking-[-0.033em] text-white sm:text-6xl">
             Next IDE, the AI code reviewer
         </h1>
-        <button
-            class="flex h-12 max-w-[200px] min-w-[160px] cursor-pointer items-center justify-center rounded-lg bg-sky-400 px-6 text-base font-bold text-white transition-colors hover:bg-sky-500"
-        >
-            <span class="truncate">Start building</span>
-        </button>
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+                href="https://marketplace.visualstudio.com/items?itemName=Next-IDE.next-ide"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex h-12 min-w-[160px] items-center justify-center rounded-lg bg-sky-400 px-6 text-base font-bold text-white transition-colors hover:bg-sky-500"
+            >
+                <span class="truncate">Install Next IDE</span>
+            </a>
+            <a
+                href="https://discord.gg/xxRAHzRQcY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex h-12 min-w-[160px] items-center justify-center rounded-lg border border-white/20 px-6 text-base font-bold text-white transition-colors hover:bg-white/10"
+            >
+                <span class="truncate">Join Discord</span>
+            </a>
+        </div>
     </div>
 
     <div class="rounded-xl border border-white/10 bg-[#121214] p-4 shadow-2xl shadow-sky-400/10">
