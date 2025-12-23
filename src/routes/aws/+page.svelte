@@ -1,10 +1,37 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
 
+	let showModal = $state(false)
+
 	onMount(() => {
 		// Ensure dark mode is applied
 		document.documentElement.classList.add('dark')
+
+		// Handle Escape key to close modal
+		const handleEscape = (e: KeyboardEvent) => {
+			if (e.key === 'Escape' && showModal) {
+				showModal = false
+			}
+		}
+
+		window.addEventListener('keydown', handleEscape)
+
+		return () => {
+			window.removeEventListener('keydown', handleEscape)
+		}
 	})
+
+	function openModal() {
+		showModal = true
+		// Prevent body scroll when modal is open
+		document.body.style.overflow = 'hidden'
+	}
+
+	function closeModal() {
+		showModal = false
+		// Restore body scroll when modal is closed
+		document.body.style.overflow = ''
+	}
 </script>
 
 <svelte:head>
@@ -33,6 +60,7 @@
 			</div>
 			<div class="flex items-center">
 				<button
+					onclick={openModal}
 					class="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-[0_0_15px_-5px_rgba(91,19,236,0.6)] transition-colors hover:bg-violet-600/90"
 				>
 					Join Now
@@ -65,22 +93,12 @@
 					Build apps with AI speed, deploy directly to your AWS account, and pay
 					only for what you use.
 				</h2>
-				<div class="mt-4 flex w-full flex-wrap justify-center gap-4 sm:w-auto">
-					<button
-						class="flex h-12 items-center justify-center rounded-lg bg-violet-600 px-8 text-base font-bold tracking-wide text-white shadow-[0_0_30px_-5px_rgba(91,19,236,0.6)] transition-all hover:scale-105 hover:bg-violet-600/90"
-					>
-						Start Building Free
-					</button>
-					<button
-						class="group flex h-12 items-center justify-center rounded-lg border border-white/10 bg-gray-800 px-8 text-base font-bold text-white transition-all hover:border-white/20 hover:bg-gray-800/80"
-					>
-						View Documentation
-						<span
-							class="ml-2 text-sm transition-transform group-hover:translate-x-1 material-symbols-outlined"
-							>arrow_forward</span
-						>
-					</button>
-				</div>
+				<button
+					onclick={openModal}
+					class="mt-4 flex h-12 items-center justify-center rounded-lg bg-violet-600 px-8 text-base font-bold tracking-wide text-white shadow-[0_0_30px_-5px_rgba(91,19,236,0.6)] transition-all hover:scale-105 hover:bg-violet-600/90"
+				>
+					Start Building Free
+				</button>
 			</div>
 		</section>
 
@@ -212,18 +230,12 @@
 					Join developers building on their own AWS infrastructure with
 					AI-powered development.
 				</p>
-				<div class="flex w-full flex-col justify-center gap-4 sm:flex-row">
-					<button
-						class="h-12 rounded-lg bg-white px-8 text-base font-bold text-gray-900 transition-colors hover:bg-gray-200"
-					>
-						Start Building Now
-					</button>
-					<button
-						class="h-12 rounded-lg border border-white/20 bg-transparent px-8 text-base font-bold text-white transition-colors hover:bg-white/5"
-					>
-						Contact Sales
-					</button>
-				</div>
+				<button
+					onclick={openModal}
+					class="h-12 rounded-lg bg-white px-8 text-base font-bold text-gray-900 transition-colors hover:bg-gray-200"
+				>
+					Start Building Now
+				</button>
 			</div>
 		</section>
 	</main>
@@ -266,6 +278,65 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Modal -->
+	{#if showModal}
+		<div
+			class="fixed inset-0 z-100 flex items-center justify-center p-4"
+			onclick={(e) => {
+				if (e.target === e.currentTarget) {
+					closeModal()
+				}
+			}}
+			onkeydown={(e) => {
+				if (e.key === 'Escape') {
+					closeModal()
+				}
+			}}
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="modal-title"
+			tabindex="-1"
+		>
+			<!-- Backdrop -->
+			<div
+				class="absolute inset-0 bg-black/80 backdrop-blur-sm"
+				role="button"
+				tabindex="0"
+				onclick={closeModal}
+				onkeydown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						closeModal()
+					}
+				}}
+				aria-label="Close modal"
+			></div>
+
+			<!-- Modal Content -->
+			<div
+				class="relative z-10 w-full max-w-2xl rounded-xl border border-white/10 bg-gray-900 shadow-2xl"
+			>
+				<!-- Close Button -->
+				<button
+					onclick={closeModal}
+					class="absolute right-4 top-4 z-20 flex size-8 items-center justify-center rounded-lg border border-white/10 bg-gray-800 text-gray-400 transition-colors hover:bg-gray-700 hover:text-white"
+					aria-label="Close modal"
+				>
+					<span class="material-symbols-outlined text-lg">close</span>
+				</button>
+
+				<!-- Modal Body -->
+				<div class="overflow-hidden rounded-xl">
+					<iframe
+						src="https://tally.so/r/w4g7Zb"
+						class="h-[600px] w-full border-0"
+						title="Tally Form"
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	{/if}
 </div>
 
 <style>
