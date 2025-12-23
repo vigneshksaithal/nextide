@@ -62,9 +62,8 @@
 				<h2
 					class="max-w-2xl text-lg font-normal leading-relaxed text-gray-400 md:text-xl"
 				>
-					Lovable connects directly to your AWS account. Build apps with AI
-					speed (vibe coding), but pay raw infrastructure prices. Stop renting
-					your own success.
+					Build apps with AI speed, deploy directly to your AWS account, and pay
+					only for what you use.
 				</h2>
 				<div class="mt-4 flex w-full flex-wrap justify-center gap-4 sm:w-auto">
 					<button
@@ -81,96 +80,6 @@
 							>arrow_forward</span
 						>
 					</button>
-				</div>
-				<div
-					class="group mt-16 w-full max-w-5xl overflow-hidden rounded-xl border border-white/10 bg-[#0d0b14] shadow-2xl"
-				>
-					<div
-						class="flex items-center gap-2 border-b border-white/5 bg-[#1a1625] px-4 py-3"
-					>
-						<div class="flex gap-2">
-							<div class="size-3 rounded-full bg-red-500/80"></div>
-							<div class="size-3 rounded-full bg-yellow-500/80"></div>
-							<div class="size-3 rounded-full bg-green-500/80"></div>
-						</div>
-						<div class="ml-4 font-mono text-xs text-gray-500">
-							deploy-pipeline.sh
-						</div>
-					</div>
-					<div class="grid md:grid-cols-2">
-						<div
-							class="border-b border-white/5 bg-[#0d0b14] p-6 font-mono text-sm text-gray-300 md:border-b-0 md:border-r md:p-8"
-						>
-							<p class="mb-2 text-gray-500"># Describe your app layout</p>
-							<p class="mb-4 text-violet-600">
-								Prompt: "Create a dashboard with a sidebar navigation, a
-								real-time revenue chart using Recharts, and a user settings form
-								connected to DynamoDB."
-							</p>
-							<p class="text-green-400 typing-effect">
-								&gt; Analyzing requirements...
-							</p>
-							<p class="text-green-400">
-								&gt; Generating Next.js components...
-							</p>
-							<p class="text-green-400">
-								&gt; Configuring AWS CloudFormation...
-							</p>
-						</div>
-						<div
-							class="relative flex min-h-[300px] items-center justify-center bg-[#110e18] p-4"
-						>
-							<div
-								class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay"
-								style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0Pm6P3QHnwV46qIAXB36a-pJzcOs_dMc-_5045nLhwaCXe_gWwN__kYLHLsrophsiRVyJze0O3zno1i9FCW0pXEZlHQ3kGtWG5WHCQIffJP4vUR3pKJwVVnzj0lCq3KVAozWLnhL3L579CjWY4w8bq1yE3wjXCBIyMZmPO1MXZn0x7Yw6_4PTa3ZRYy60XITbs8eWLM1IUCyDg1mTAdxLY7-fUPULpOriIApg2Z-_1o-6fSVvtloTa8T-S6NyT602jesimKhzVLEE')"
-							></div>
-							<div class="relative z-10 flex w-full max-w-xs flex-col gap-4">
-								<div
-									class="flex items-center justify-between rounded border border-violet-600/30 bg-gray-800 p-3 shadow-[0_0_15px_-5px_rgba(91,19,236,0.3)]"
-								>
-									<div class="flex items-center gap-3">
-										<span class="material-symbols-outlined text-violet-600"
-											>cloud_queue</span
-										>
-										<span class="text-sm font-medium text-white"
-											>AWS Account</span
-										>
-									</div>
-									<span class="text-xs text-green-400">Connected</span>
-								</div>
-								<div class="h-8 w-px self-center bg-white/10"></div>
-								<div class="grid grid-cols-3 gap-2">
-									<div
-										class="flex flex-col items-center gap-1 rounded border border-white/5 bg-white/5 p-2"
-									>
-										<span
-											class="material-symbols-outlined text-xs text-blue-400"
-											>storage</span
-										>
-										<span class="text-[10px] text-gray-400">S3</span>
-									</div>
-									<div
-										class="flex flex-col items-center gap-1 rounded border border-white/5 bg-white/5 p-2"
-									>
-										<span
-											class="material-symbols-outlined text-xs text-orange-400"
-											>functions</span
-										>
-										<span class="text-[10px] text-gray-400">Lambda</span>
-									</div>
-									<div
-										class="flex flex-col items-center gap-1 rounded border border-white/5 bg-white/5 p-2"
-									>
-										<span
-											class="material-symbols-outlined text-xs text-purple-400"
-											>table_chart</span
-										>
-										<span class="text-[10px] text-gray-400">Dynamo</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -195,7 +104,7 @@
 					</div>
 					<div class="flex items-baseline gap-2">
 						<p class="text-4xl font-bold tracking-tight text-white">60%</p>
-						<p class="text-sm font-medium text-green-500">vs Managed PaaS</p>
+						<p class="text-sm font-medium text-green-500">cost savings</p>
 					</div>
 				</div>
 				<div
@@ -211,7 +120,7 @@
 					</div>
 					<div class="flex items-baseline gap-2">
 						<p class="text-4xl font-bold tracking-tight text-white">2 min</p>
-						<p class="text-sm font-medium text-gray-500">Connect via IAM</p>
+						<p class="text-sm font-medium text-gray-500">to connect</p>
 					</div>
 				</div>
 				<div
@@ -227,7 +136,7 @@
 					</div>
 					<div class="flex items-baseline gap-2">
 						<p class="text-4xl font-bold tracking-tight text-white">20+</p>
-						<p class="text-sm font-medium text-blue-400">Natively supported</p>
+						<p class="text-sm font-medium text-blue-400">integrations</p>
 					</div>
 				</div>
 			</div>
@@ -241,12 +150,10 @@
 						Why Lovable + AWS?
 					</h2>
 					<p class="text-lg text-gray-400">
-						Experience the freedom of owning your infrastructure without the
-						complexity of managing it manually. We bridge the gap between
-						"Vercel-easy" and "AWS-cheap".
+						Own your infrastructure, control your costs, and deploy with ease.
 					</p>
 				</div>
-				<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 					<div
 						class="group flex flex-col gap-6 rounded-2xl border border-white/5 bg-gray-800/20 p-6 transition-colors hover:bg-gray-800/40"
 					>
@@ -262,8 +169,8 @@
 								Own the Infrastructure
 							</h3>
 							<p class="text-sm leading-relaxed text-gray-400">
-								No platform lock-in. You keep the keys and full access to your
-								AWS resources. If we disappear tomorrow, your app stays online.
+								Full access to your AWS resources. No platform lock-in—your app
+								stays online even if we disappear.
 							</p>
 						</div>
 					</div>
@@ -282,120 +189,8 @@
 								Cost Control
 							</h3>
 							<p class="text-sm leading-relaxed text-gray-400">
-								Pay AWS directly. We don't mark up your bandwidth or compute
-								costs. Enjoy the spot pricing and free tiers directly from the
-								source.
-							</p>
-						</div>
-					</div>
-					<div
-						class="group flex flex-col gap-6 rounded-2xl border border-white/5 bg-gray-800/20 p-6 transition-colors hover:bg-gray-800/40"
-					>
-						<div
-							class="flex size-12 items-center justify-center rounded-lg border border-white/10 bg-gray-800 text-white"
-						>
-							<span class="material-symbols-outlined">auto_awesome</span>
-						</div>
-						<div class="flex flex-col gap-2">
-							<h3
-								class="text-xl font-bold text-white transition-colors group-hover:text-violet-600"
-							>
-								Vibe Coding
-							</h3>
-							<p class="text-sm leading-relaxed text-gray-400">
-								Describe your app in plain English, and we deploy the full stack
-								instantly. From prompt to production in minutes.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Technical Precision Section -->
-		<section
-			class="flex w-full justify-center border-t border-white/5 bg-gray-800/20 px-4 py-24"
-		>
-			<div class="flex w-full max-w-6xl flex-col gap-12">
-				<div class="flex max-w-2xl flex-col gap-4">
-					<h2 class="text-3xl font-black tracking-tight text-white md:text-4xl">
-						Technical Precision
-					</h2>
-					<p class="text-base text-gray-400">
-						Built for developers who want the speed of a PaaS with the raw power
-						of IaaS.
-					</p>
-				</div>
-				<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-					<div
-						class="flex flex-col gap-4 rounded-xl border border-white/5 bg-gray-800 p-6 transition-all hover:-translate-y-1 hover:border-violet-600/40"
-					>
-						<div
-							class="flex size-12 items-center justify-center rounded-lg border border-white/10 bg-gray-900 text-white"
-						>
-							<span class="material-symbols-outlined">cloud_off</span>
-						</div>
-						<div>
-							<h3 class="mb-1 text-base font-bold text-white">
-								Zero Markup Hosting
-							</h3>
-							<p class="text-sm text-gray-400">
-								Deploy static sites and assets without the markup tax. Pay only
-								for what you use.
-							</p>
-						</div>
-					</div>
-					<div
-						class="flex flex-col gap-4 rounded-xl border border-white/5 bg-gray-800 p-6 transition-all hover:-translate-y-1 hover:border-violet-600/40"
-					>
-						<div
-							class="flex size-12 items-center justify-center rounded-lg border border-white/10 bg-gray-900 text-white"
-						>
-							<span class="material-symbols-outlined">database</span>
-						</div>
-						<div>
-							<h3 class="mb-1 text-base font-bold text-white">
-								Direct S3 Access
-							</h3>
-							<p class="text-sm text-gray-400">
-								Upload and manage files directly in your own buckets. Full ACL
-								control.
-							</p>
-						</div>
-					</div>
-					<div
-						class="flex flex-col gap-4 rounded-xl border border-white/5 bg-gray-800 p-6 transition-all hover:-translate-y-1 hover:border-violet-600/40"
-					>
-						<div
-							class="flex size-12 items-center justify-center rounded-lg border border-white/10 bg-gray-900 text-white"
-						>
-							<span class="material-symbols-outlined">code</span>
-						</div>
-						<div>
-							<h3 class="mb-1 text-base font-bold text-white">
-								Lambda Integration
-							</h3>
-							<p class="text-sm text-gray-400">
-								Serverless functions generated by AI and deployed directly to
-								your account.
-							</p>
-						</div>
-					</div>
-					<div
-						class="flex flex-col gap-4 rounded-xl border border-white/5 bg-gray-800 p-6 transition-all hover:-translate-y-1 hover:border-violet-600/40"
-					>
-						<div
-							class="flex size-12 items-center justify-center rounded-lg border border-white/10 bg-gray-900 text-white"
-						>
-							<span class="material-symbols-outlined">rocket_launch</span>
-						</div>
-						<div>
-							<h3 class="mb-1 text-base font-bold text-white">
-								One-Click Deploy
-							</h3>
-							<p class="text-sm text-gray-400">
-								Push to production in seconds with fully automated CI/CD
-								pipelines.
+								Pay AWS directly with no markup. Get spot pricing and free tiers
+								straight from the source.
 							</p>
 						</div>
 					</div>
@@ -411,11 +206,11 @@
 				class="flex w-full max-w-4xl flex-col items-center gap-8 text-center"
 			>
 				<h2 class="text-4xl font-black tracking-tight text-white md:text-5xl">
-					Ready to stop overpaying?
+					Ready to get started?
 				</h2>
 				<p class="max-w-xl text-lg text-gray-300">
-					Join thousands of developers building the future of the web on their
-					own infrastructure, with the best developer experience in the world.
+					Join developers building on their own AWS infrastructure with
+					AI-powered development.
 				</p>
 				<div class="flex w-full flex-col justify-center gap-4 sm:flex-row">
 					<button
@@ -451,8 +246,7 @@
 						<span class="font-bold text-white">Lovable + AWS</span>
 					</div>
 					<p class="max-w-xs text-sm text-gray-500">
-						The modern way to build on AWS. AI-native development environment
-						that deploys directly to your cloud account.
+						AI-powered development that deploys directly to your AWS account.
 					</p>
 				</div>
 			</div>
