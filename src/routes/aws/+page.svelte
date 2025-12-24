@@ -266,7 +266,7 @@
 				class="flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 md:flex-row"
 			>
 				<p class="text-sm text-gray-600">
-					© 2024 Lovable Labs Inc. All rights reserved.
+					© 2024 Lovable + AWS Inc. All rights reserved.
 				</p>
 				<div class="flex items-center gap-2">
 					<span class="relative flex h-2 w-2">
