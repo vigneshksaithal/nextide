@@ -23,6 +23,6 @@
 		"vite": "^8.0.0-beta.7"
 	},
 	"dependencies": {
-		"@sveltejs/adapter-static": "^3.0.10"
+		"@sveltejs/adapter-node": "^5.4.0"
 	}
 }
