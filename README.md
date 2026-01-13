@@ -1,22 +1,41 @@
-# sv
+# Next IDE
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern landing page for **Next IDE** - The AI Code Reviewer. Next IDE is a VS Code extension that provides AI-assisted code reviews, visual diffs, and collaboration tools to accelerate your development workflow.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Code Diagrams** - Visualize your entire code architecture at a glance to understand dependencies and impact
+- **Flowchart Diffs** - Intuitively grasp logic changes with visual diffs that show flow instead of just text
+- **Faster Reviews** - Leverage AI-powered suggestions and a streamlined UI to complete reviews in record time
+
+## Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/) - Full-stack framework
+- [Svelte 5](https://svelte.dev/) - Modern reactive framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vite](https://vitejs.dev/) - Build tool and dev server
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ (or Bun)
+- npm, pnpm, yarn, or bun
+
+### Installation
 
 ```sh
-# create a new project in the current directory
-npx sv create
+# Install dependencies
+npm install
 
-# create a new project in my-app
-npx sv create my-app
+# or with bun
+bun install
 ```
 
-## Developing
+### Development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start the development server:
 
 ```sh
 npm run dev
@@ -25,14 +44,52 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+The app will be available at `http://localhost:5173`
 
-To create a production version of your app:
+### Building
+
+Create a production build:
 
 ```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+npm run preview
+```
+
+### Running Production Build
+
+After building, you can run the production server:
+
+```sh
+npm start
+```
+
+This uses the Node.js adapter and serves the built application.
+
+## Project Structure
+
+```
+src/
+├── app.html          # HTML template
+├── app.css           # Global styles
+├── routes/           # SvelteKit routes
+│   ├── +layout.svelte
+│   └── +page.svelte  # Landing page
+└── lib/
+    ├── components/   # Reusable components
+    │   └── Landing/ # Landing page components
+    └── styles/       # Component styles
+```
+
+## Links
+
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Next-IDE.next-ide)
+- [Discord Community](https://discord.gg/xxRAHzRQcY)
+
+## License
+
+Private project
